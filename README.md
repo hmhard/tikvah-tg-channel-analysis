@@ -1,12 +1,39 @@
 # [Tikvah](https://t.me/s/tikvahethiopia) Telegram channel analysis repo
 ! this repo analysis is done for **learning purpose**
 
+## one of analysis dashboard
+
 ![Image](./image.png)
+
+### libraries used
+- bs4
+
+### install by using
+```bash
+pip install -r requirements.txt
+```
+
+### Preprocessing Steps Completed:
+
+- Fetched HTML data.
+- Extracted data into JSON format.
+- Filtered Amharic keywords, removing entries with:
+  - Emojis
+  - English characters
+  - Special characters
+  - Numbers
+- Filtered out stop words.
+
+### change top_n (default:500) in top-words.py and run
+
+```bash
+python top-words.py
+```
 
 ## final data be like
 
 ```bash
-let data = {
+ data = {
     "ሰዎች": 14109,
     "ከተማ": 10457,
     "ክልል": 9968,
@@ -39,7 +66,7 @@ let data = {
     ...
 ```
 
-## you can also do extra processing and analysis, create pull request.
+## you can also do extra processing and analysis and create pull request.
 ---
 
 ## if you like this repo, please give it the star.
