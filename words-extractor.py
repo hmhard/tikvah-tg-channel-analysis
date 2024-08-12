@@ -9,13 +9,11 @@ html_folder = './files/'
 # Function to clean and split text into words
 def extract_words(text):
     words_list = text.lower().split()
-    # NOTE: additional processing will be addede later
+    # NOTE: additional processing will be added later
     return words_list
 
-# Initialize a defaultdict to store word counts
 word_dict = defaultdict(int)
 
-# Iterate through each file in the folder
 count = 0
 for filename in os.listdir(html_folder):
     if filename.endswith(".html"):
@@ -31,6 +29,8 @@ for filename in os.listdir(html_folder):
             
             # Update word count dictionary
             for word in words:
+                if len(word) > 1 and (word[0] == 'የ' or word[0] == 'በ'):
+                    word = word[1:]
                 word_dict[word] += 1
 
 # Convert defaultdict to regular dict

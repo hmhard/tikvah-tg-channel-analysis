@@ -11,7 +11,7 @@ non_english_keys_file = 'outputs/non_english_keys.json'
 with open(file_path, 'r', encoding='utf-8') as file:
     data = json.load(file)
 
-pattern = re.compile("[A-Za-z]+")
+pattern = r'[A-Za-z]'
 
 # Dictionaries to store the separated keys
 english_keys = {}
@@ -19,7 +19,7 @@ non_english_keys = {}
 
 # Separate keys based on the pattern
 for k, v in data.items():
-    if pattern.match(k):
+    if re.search(pattern, k):
         english_keys[k] = v
     else:
         non_english_keys[k] = v

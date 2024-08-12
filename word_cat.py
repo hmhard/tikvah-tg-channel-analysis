@@ -9,6 +9,6 @@ with open(file_path, 'r', encoding='utf-8') as file:
 
 pattern = re.compile("^[A-Za-z]+$")
 
-english_keys = {k: v for k, v in data.items() if pattern.match(k)}
+english_keys = {k: v for k, v in data.items() if pattern.search(k)}
 
 print(json.dumps(english_keys, indent=4))

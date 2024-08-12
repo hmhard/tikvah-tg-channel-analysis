@@ -1,6 +1,7 @@
 import json
 import re
 
+# file_path = 'outputs/word_pair_dictionary.json'
 file_path = 'outputs/word_dictionary.json'
 
 valid_keys_file = 'outputs/valid_keys.json'
@@ -17,11 +18,11 @@ valid_keys = {}
 invalid_keys = {}
 
 def is_only_emoji(s):
-    return all(emoji_pattern.match(c) for c in s)
+    return all(emoji_pattern.search(c) for c in s)
 
 # Separate keys based on whether they are only symbols, only numbers, or only emojis
 for k, v in data.items():
-    if symbols_pattern.match(k) or numbers_pattern.match(k) or is_only_emoji(k):
+    if symbols_pattern.search(k) or numbers_pattern.search(k) or is_only_emoji(k):
         invalid_keys[k] = v
     else:
         valid_keys[k] = v
