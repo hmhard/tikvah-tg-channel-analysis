@@ -2,10 +2,10 @@ import json
 import re
 
 # Path to the input JSON file with key-value pairs
-input_file_path = 'non_english_keys.json'
+input_file_path = 'outputs/non_english_keys.json'
 
 # Path to the output JSON file where filtered key-value pairs will be saved
-output_file_path = 'cleared_unwanted_keys.json'
+output_file_path = 'outputs/cleared_unwanted_keys.json'
 
 # Regular expressions for identifying unwanted characters in keys
 symbols_pattern = re.compile(r'[^\w\s]', re.UNICODE)  # Matches any symbols (excluding alphanumeric and whitespace)

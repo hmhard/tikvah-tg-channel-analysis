@@ -1,11 +1,11 @@
 import json
 import re
 
-file_path = 'valid_keys.json'
+file_path = 'outputs/valid_keys.json'
 
 # Output file paths
-english_keys_file = 'english_keys.json'
-non_english_keys_file = 'non_english_keys.json'
+english_keys_file = 'outputs/english_keys.json'
+non_english_keys_file = 'outputs/non_english_keys.json'
 
 # Open and load the JSON file
 with open(file_path, 'r', encoding='utf-8') as file:

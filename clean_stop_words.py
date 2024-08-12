@@ -1,8 +1,8 @@
 import json
 
-data_file_path = 'cleared_unwanted_keys.json'  
-keys_to_remove_file_path = 'stop_words.json' 
-output_file_path = 'final_filtered_data.json' 
+data_file_path = 'outputs/cleared_unwanted_keys.json'  
+keys_to_remove_file_path = 'outputs/stop_words.json' 
+output_file_path = 'outputs/final_filtered_data.json' 
 
 with open(data_file_path, 'r', encoding='utf-8') as file:
     key_value_pairs = json.load(file) 

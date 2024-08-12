@@ -8,10 +8,9 @@ html_folder = './files/'
 
 # Function to clean and split text into words
 def extract_words(text):
-    # Remove punctuation, convert to lowercase, and split into words
-    words = text.lower().split()
+    words_list = text.lower().split()
     # NOTE: additional processing will be addede later
-    return words
+    return words_list
 
 # Initialize a defaultdict to store word counts
 word_dict = defaultdict(int)
@@ -38,7 +37,7 @@ for filename in os.listdir(html_folder):
 word_dict = dict(word_dict)
 
 # Save the word dictionary to a JSON file
-output_file = 'word_dictionary.json'
+output_file = 'outputs/word_dictionary.json'
 with open(output_file, 'w', encoding='utf-8') as json_file:
     json.dump(word_dict, json_file, ensure_ascii=False, indent=4)
 

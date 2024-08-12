@@ -1,10 +1,10 @@
 import json
 
 # Path to the input JSON file containing an array of words
-input_file_path = 'stop_words.json'
+input_file_path = 'outputs/stop_words.json'
 
 # Path to the output JSON file where unique words will be saved
-output_file_path = 'unique_words.json'
+output_file_path = 'outputs/unique_words.json'
 
 # Open and load the JSON file
 with open(input_file_path, 'r', encoding='utf-8') as file:
