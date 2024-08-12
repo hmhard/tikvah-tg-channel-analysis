@@ -18,13 +18,10 @@ git clone https://github.com/hmhard/tikvah-tg-channel-analysis.git
 ```bash
 # give permission
 chmod +x process.sh
-./process.sh 500
 ```
 
-
 ```bash
-# default 500 given change to whatever you want
-chmod +x process.sh
+# default 500 given to top n change to whatever you want
 ./process.sh 500
 ```
 
