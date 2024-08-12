@@ -8,7 +8,7 @@ input_file_path = 'outputs/non_english_keys.json'
 output_file_path = 'outputs/cleared_unwanted_keys.json'
 
 # Regular expressions for identifying unwanted characters in keys
-symbols_pattern = re.compile(r'[^\w\s]', re.UNICODE)  # Matches any symbols (excluding alphanumeric and whitespace)
+symbols_pattern = re.compile(r'[^\w\s\-]', re.UNICODE)  # Matches any symbols (excluding alphanumeric and whitespace)
 numbers_pattern = re.compile(r'\d')  # Matches any digits
 emoji_pattern = re.compile("[\U00010000-\U0010FFFF]", flags=re.UNICODE)  # Matches emojis
 

@@ -9,9 +9,9 @@ top_n="$1"
 
 python_files=(
     # "words-extractor.py"
-    # "clear-non-alpha.py"
-    # "separate.py"
-    # "remove_unwanted_chars_from_keys.py"
+    "clear-non-alpha.py"
+    "separate.py"
+    "remove_unwanted_chars_from_keys.py"
     "clean_stop_words.py"
 )
 pip install -r requirements.txt
