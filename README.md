@@ -3,7 +3,7 @@
 
 ## one of analysis dashboard
 
-![Image](./image.png)
+![Image](./assets/image.png)
 
 ### libraries used
 - bs4

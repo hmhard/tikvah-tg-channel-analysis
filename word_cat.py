@@ -1,7 +1,7 @@
 import json
 import re
 
-file_path = 'word_dictionary.json'
+file_path = 'outputs/word_dictionary.json'
 
 # Open and load the JSON file
 with open(file_path, 'r', encoding='utf-8') as file:

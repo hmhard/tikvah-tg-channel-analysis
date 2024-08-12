@@ -1,10 +1,10 @@
 import json
 import re
 
-file_path = 'word_dictionary.json'
+file_path = 'outputs/word_dictionary.json'
 
-valid_keys_file = 'valid_keys.json'
-invalid_keys_file = 'invalid_keys.json'
+valid_keys_file = 'outputs/valid_keys.json'
+invalid_keys_file = 'outputs/invalid_keys.json'
 
 with open(file_path, 'r', encoding='utf-8') as file:
     data = json.load(file)
