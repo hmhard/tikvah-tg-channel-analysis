@@ -14,6 +14,7 @@ python_files=(
     # "remove_unwanted_chars_from_keys.py"
     "clean_stop_words.py"
 )
+pip install -r requirements.txt
 
 for file in "${python_files[@]}"
 do

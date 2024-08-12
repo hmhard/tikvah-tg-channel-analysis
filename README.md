@@ -8,9 +8,24 @@
 ### libraries used
 - bs4
 
-### install by using
+### clone repo
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/hmhard/tikvah-tg-channel-analysis.git
+```
+
+### run the following commands 
+
+```bash
+# give permission
+chmod +x process.sh
+./process.sh 500
+```
+
+
+```bash
+# default 500 given change to whatever you want
+chmod +x process.sh
+./process.sh 500
 ```
 
 ### Preprocessing Steps Completed:
@@ -24,11 +39,7 @@ pip install -r requirements.txt
   - Numbers
 - Filtered out stop words.
 
-### change top_n (default:500) in top-words.py and run
 
-```bash
-python top-words.py
-```
 
 ## final data be like
 
